@@ -8,10 +8,10 @@ public class Exercise02 {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite o primeiro numero: ");
-        double numero1 = teclado.nextInt();
+        double numero1 = teclado.nextDouble();
 
         System.out.print("Digite o segundo numero: ");
-        double numero2 = teclado.nextInt();
+        double numero2 = teclado.nextDouble();
 
         double soma = numero1 + numero2;
         double sub = numero1 - numero2;

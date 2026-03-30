@@ -14,7 +14,9 @@ public class Exercise03 {
         int minutos = (segundosTotais % 3600) / 60;
         int segundos = segundosTotais % 60;
 
-        System.out.printf("%02d:%02d:%02d", horas, minutos, segundos);
+        System.out.printf("%02d:%02d:%02d%n", horas, minutos, segundos);
+
+        teclado.close();
     }
 }
 
