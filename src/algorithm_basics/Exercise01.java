@@ -14,7 +14,10 @@ public class Exercise01 {
         int idade = teclado.nextInt();
 
         System.out.printf("%s tem %d anos%n", nome, idade);
-        
+
         teclado.close();
     }
 }
+
+/*Leia o nome de uma pessoa e a sua idade. Depois, mostre uma
+mensagem como: “Maria tem 20 anos”.*/
