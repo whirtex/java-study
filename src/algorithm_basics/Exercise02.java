@@ -23,6 +23,5 @@ public class Exercise02 {
         teclado.close();
     }
 }
-
 /*Leia dois números inteiros e mostre na tela a soma, a subtração, a
 multiplicação e a divisão entre eles.*/

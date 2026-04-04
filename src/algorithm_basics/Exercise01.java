@@ -18,6 +18,5 @@ public class Exercise01 {
         teclado.close();
     }
 }
-
 /*Leia o nome de uma pessoa e a sua idade. Depois, mostre uma
 mensagem como: “Maria tem 20 anos”.*/

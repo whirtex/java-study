@@ -19,6 +19,5 @@ public class Exercise03 {
         teclado.close();
     }
 }
-
 /*Leia um valor em segundos e mostre esse tempo no formato h:m:s
 (horas, minutos e segundos).*/
