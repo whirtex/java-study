@@ -3,6 +3,7 @@ package algorithm_basics;
 import java.util.Scanner;
 
 public class Exercise06 {
+
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
