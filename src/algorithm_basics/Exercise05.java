@@ -30,5 +30,6 @@ public class Exercise05 {
 
     }
 }
+
 /*Leia a massa e a altura de uma pessoa. Calcule e mostre o Índice de
 Massa Corporal (IMC), usando a fórmula: IMC = massa ÷ (altura²).*/

@@ -29,6 +29,7 @@ public class Exercise06 {
 
     }
 }
+
 /*Leia as notas de ap1, ap2 e ac, calcule a média do aluno e mostre
 “Aprovado” se média for ≥ 7, senão mostre “Reprovado”
 Média do aluno = 40% da ap1 + 40% da ap2 + 20% da ac */

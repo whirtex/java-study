@@ -24,5 +24,6 @@ public class Exercise02 {
 
     }
 }
+
 /*Leia dois números inteiros e mostre na tela a soma, a subtração, a
 multiplicação e a divisão entre eles.*/

@@ -3,7 +3,7 @@ package algorithm_basics;
 import java.util.Scanner;
 
 public class Exercise04 {
-    public static void  main(String[] args) {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite o seu salario: ");
@@ -21,5 +21,6 @@ public class Exercise04 {
 
     }
 }
+
 /*Leia o valor do salário de uma pessoa e um percentual de aumento.
         Depois, mostre o novo salário com o aumento aplicado.*/
