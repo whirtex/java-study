@@ -17,6 +17,7 @@ public class Exercise03 {
         System.out.printf("%02d:%02d:%02d%n", horas, minutos, segundos);
 
         teclado.close();
+
     }
 }
 /*Leia um valor em segundos e mostre esse tempo no formato h:m:s

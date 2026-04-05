@@ -18,9 +18,10 @@ public class Exercise02 {
         double mult = numero1 * numero2;
         double div = numero1 / numero2;
 
-        System.out.printf("A soma é %.2f, a subtração é %.2f, a multiplicação é %.2f e a divisão é %.2f", soma, sub, mult, div );
+        System.out.printf("A soma é %.2f, a subtração é %.2f, a multiplicação é %.2f e a divisão é %.2f", soma, sub, mult, div);
 
         teclado.close();
+
     }
 }
 /*Leia dois números inteiros e mostre na tela a soma, a subtração, a

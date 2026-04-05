@@ -12,7 +12,7 @@ public class Exercise05 {
         System.out.print("Digite sua altura(m): ");
         double altura = teclado.nextDouble();
 
-        double imc = massa / (altura*altura);
+        double imc = massa / (altura * altura);
 
         System.out.printf("Seu IMC é: %.2f%n", imc);
 
@@ -27,6 +27,7 @@ public class Exercise05 {
         }
 
         teclado.close();
+
     }
 }
 /*Leia a massa e a altura de uma pessoa. Calcule e mostre o Índice de
