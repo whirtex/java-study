@@ -39,6 +39,5 @@ escaleno.*/
             System.out.println("O triangulo é escaleno! ");
         } else {
             System.out.println("O triangulo é isosceles! ");
-
         }
 */
