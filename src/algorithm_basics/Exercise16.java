@@ -21,8 +21,25 @@ public class Exercise16 {
         }
 
         teclado.close();
+
     }
 }
 
 /* Leia um número inteiro n e mostre os números de 0 até n, caso n seja positivo. Se
 n for negativo, mostre de n até 0*/
+
+/* OU
+        if (n < 0) {
+            int i = n;
+            while (i <= 0) {
+                System.out.println(i);
+                i++;
+            }
+        } else {
+            int i = 0;
+            while (i <= n) {
+                System.out.println(i);
+                i++;
+            }
+        }
+*/
