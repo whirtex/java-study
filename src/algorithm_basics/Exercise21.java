@@ -34,20 +34,18 @@ public class Exercise21 {
         System.out.print("Digite o segundo numero: ");
         double numero2 = teclado.nextDouble();
 
-        double resultado1 = somar(numero1, numero2);
-        double resultado2 = subtrair(numero1, numero2);
-        double resultado3 = multiplicar(numero1, numero2);
-        double resultado4 = dividir(numero1, numero2);
-
-        System.out.println("A soma dá: " + resultado1);
-        System.out.println("A subtracao dá: " + resultado2);
-        System.out.println("A multiplicação dá: " + resultado3);
-        System.out.println("A divisão dá: " + resultado4);
+        System.out.printf("A soma dá: %.1f%n", somar(numero1, numero2));
+        System.out.printf("A subtracao dá: %.1f%n", subtrair(numero1, numero2));
+        System.out.printf("A multiplicacao dá: %.1f%n", multiplicar(numero1, numero2));
+        System.out.printf("A divisao dá: %.1f%n", dividir(numero1, numero2));
 
         teclado.close();
 
     }
 }
+
+/*Complemente a classe Matematica com métodos para subtrair,
+multiplicar e dividir dois números inteiros. Teste os métodos criados.*/
 
 
 

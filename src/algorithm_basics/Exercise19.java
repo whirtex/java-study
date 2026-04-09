@@ -36,20 +36,18 @@ public class Exercise19 {
         }
 
         if (contador > 0) {
-
             double media = (double) soma / contador;
-            
-            System.out.println("Somatório: " + soma);
-            System.out.println("Média: " + media);
-            System.out.println("Maior número: " + maior);
-            System.out.println("Menor número: " + menor);
+
+            System.out.printf("Somatório: %d%n", soma);
+            System.out.printf("Média: %.2f%n", media);
+            System.out.printf("Maior número: %d%n", maior);
+            System.out.printf("Menor número: %d%n", menor);
 
         } else {
-            System.out.println("Nenhum numero válido foi digitado.");
+            System.out.printf("Nenhum numero válido foi digitado.%n");
         }
 
         teclado.close();
-
     }
 }
 

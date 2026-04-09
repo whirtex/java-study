@@ -10,14 +10,12 @@ public class Exercise20 {
         int vogais = 0;
         int digitos = 0;
         int outros = 0;
-        // char para nao dar erro na primeira volta
         char ingresso = ' ';
 
         while (ingresso != '.') {
             System.out.print("Digite um caractere (ou . para sair): ");
             ingresso = teclado.next().charAt(0);
 
-            // converte pra minuscula para facilitar a conta
             ingresso = Character.toLowerCase(ingresso);
 
             if (ingresso != '.') {
@@ -31,12 +29,11 @@ public class Exercise20 {
             }
         }
 
-        System.out.println("Quantidade de vogais: " + vogais);
-        System.out.println("Quantidade de dígitos: " + digitos);
-        System.out.println("Quantidade de outros caracteres: " + outros);
+        System.out.printf("Quantidade de vogais: %d%n", vogais);
+        System.out.printf("Quantidade de dígitos: %d%n", digitos);
+        System.out.printf("Quantidade de outros caracteres: %d%n", outros);
 
         teclado.close();
-
     }
 }
 

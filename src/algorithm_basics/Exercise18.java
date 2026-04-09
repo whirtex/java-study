@@ -23,15 +23,14 @@ public class Exercise18 {
         if (contador > 0) {
             double media = (double) soma / contador;
 
-            System.out.println("Somatório dos ímpares: " + soma);
-            System.out.println("Média dos ímpares: " + media);
+            System.out.printf("Somatório dos ímpares: %d%n", soma);
+            System.out.printf("Média dos ímpares: %.2f%n", media);
 
         } else {
-            System.out.println("Digite um numero maior que zero.");
+            System.out.printf("Digite um numero maior que zero.%n");
         }
 
         teclado.close();
-
     }
 }
 
