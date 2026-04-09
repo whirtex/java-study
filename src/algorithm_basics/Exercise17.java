@@ -15,6 +15,9 @@ public class Exercise17 {
                 System.out.println(i);
             }
         }
+
+        teclado.close();
+
     }
 }
 
