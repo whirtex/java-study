@@ -63,6 +63,6 @@ public class Medicamento {
         }
 
     public void exibirInformacoes() {
-        System.out.printf("%nNome: %s%nPreco: %.2f%nEstoque: %d%nPrincipio Ativo: %s%nNecessita receita: %s%n", nome, precoUnitario, qtdEstoque, principioAtivo, necessitaReceita);
+        System.out.printf("%nNome: %s%nPreco: %.2f%nEstoque: %d%nPrincipio Ativo: %s%nNecessita receita: %b%n", nome, precoUnitario, qtdEstoque, principioAtivo, necessitaReceita);
     }
 }
