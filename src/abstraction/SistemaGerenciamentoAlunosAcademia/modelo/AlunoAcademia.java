@@ -2,7 +2,7 @@ package abstraction.SistemaGerenciamentoAlunosAcademia.modelo;
 
 public class AlunoAcademia {
     private String nome;
-    private String matricula;
+    private final String matricula;
     private String planoMensal;
     private int totalAulasRealizadas;
     private boolean mensalidadeAtiva;
@@ -16,13 +16,16 @@ public class AlunoAcademia {
         }
         if (matricula == null || matricula.isEmpty()) {
             System.out.printf("%nMatricula nao pode ser vazio!%n");
+            this.matricula = "";
         } else {
             this.matricula = matricula;
         }
         if (planoMensal == null || planoMensal.isEmpty()) {
             System.out.printf("%nPlano Mensal nao pode ser vazio!%n");
+        } else if (!planoMensal.equalsIgnoreCase("BASICO") && !planoMensal.equalsIgnoreCase("INTERMEDIARIO") && !planoMensal.equalsIgnoreCase("PREMIUM")) {
+            System.out.printf("%nPlano invalido! Use BASICO, INTERMEDIARIO ou PREMIUM%n");
         } else {
-            this.planoMensal = planoMensal;
+            this.planoMensal = planoMensal.toUpperCase();
         }
         if (totalAulasRealizadas < 0) {
             System.out.printf("%nTotal de aulas realizadas nao poder ser menor que 0!%n");
