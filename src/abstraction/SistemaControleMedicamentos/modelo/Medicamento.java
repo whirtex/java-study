@@ -5,7 +5,7 @@ public class Medicamento {
     private String principioAtivo;
     private int qtdEstoque;
     private float precoUnitario;
-    private boolean necessitaReceita;
+    private final boolean necessitaReceita;
 
     public Medicamento(String nome, String principioAtivo, int qtdEstoque, float precoUnitario, boolean necessitaReceita) {
         if (nome == null || nome.isEmpty()) {
@@ -62,7 +62,11 @@ public class Medicamento {
         precoUnitario *= 1+ percentual/100;
         }
 
-    public void exibirInformacoes() {
-        System.out.printf("%nNome: %s%nPreco: %.2f%nEstoque: %d%nPrincipio Ativo: %s%nNecessita receita: %b%n", nome, precoUnitario, qtdEstoque, principioAtivo, necessitaReceita);
+    @Override
+    public String toString() {
+        return String.format(
+                "%nNome: %s%nPreco: %.2f%nEstoque: %d%nPrincipio Ativo: %s%nNecessita receita: %b%n",
+                nome, precoUnitario, qtdEstoque, principioAtivo, necessitaReceita
+        );
     }
 }
