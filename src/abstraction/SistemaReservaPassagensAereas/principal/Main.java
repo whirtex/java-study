@@ -5,16 +5,16 @@ import abstraction.SistemaReservaPassagensAereas.modelo.Passagem;
 public class Main {
     public static void main(String[] args) {
         Passagem passagem = new Passagem("RES067", "Igor Costa", "GIG", "GRU", 850.00f, 0, "AGUARDANDO");
-        passagem.exibirInformacoes();
+        System.out.println(passagem);
 
         passagem.confirmarReserva();
-        passagem.exibirInformacoes();
+        System.out.println(passagem);
 
         passagem.aplicarUpgrade(200.00f);
-        passagem.exibirInformacoes();
+        System.out.println(passagem);
 
         passagem.cancelarReserva();
-        passagem.exibirInformacoes();
+        System.out.println(passagem);
 
         passagem.confirmarReserva();
         passagem.cancelarReserva();

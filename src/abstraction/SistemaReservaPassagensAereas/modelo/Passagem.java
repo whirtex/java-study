@@ -1,7 +1,7 @@
 package abstraction.SistemaReservaPassagensAereas.modelo;
 
 public class Passagem {
-    private String codigoReserva;
+    private final String codigoReserva;
     private String nomePassageiro;
     private String origem;
     private String destino;
@@ -12,6 +12,7 @@ public class Passagem {
     public Passagem(String codigoReserva, String nomePassageiro, String origem, String destino, float valorTarifa, float dividaExistente, String statusReserva) {
         if (codigoReserva == null || codigoReserva.isEmpty()) {
             System.out.printf("%nCodigo da reserva nao pode ser vazio!%n");
+            this.codigoReserva = "";
         } else {
             this.codigoReserva = codigoReserva;
         }
@@ -64,12 +65,13 @@ public class Passagem {
     }
 
     public void cancelarReserva() {
-        if (statusReserva.equals("CANCELADA")) {
-            System.out.printf("%nReserva ja esta cancelada!%n");
-            return;
-        }
-        if (statusReserva.equals("CONFIRMADA")) {
-            dividaExistente += valorTarifa * 0.15f;
+        switch (statusReserva) {
+            case "CANCELADA":
+                System.out.printf("%nReserva ja esta cancelada!%n");
+                return;
+            case "CONFIRMADA":
+                dividaExistente += valorTarifa * 0.15f;
+                break;
         }
         statusReserva = "CANCELADA";
     }
@@ -85,8 +87,10 @@ public class Passagem {
         valorTarifa += valorAdicional;
         dividaExistente += valorAdicional;
     }
-    public void exibirInformacoes() {
-        System.out.printf(
+
+    @Override
+    public String toString() {
+        return String.format(
                 "%nCodigo da Reserva: %s%nPassageiro: %s%nOrigem: %s%nDestino: %s%nTarifa: %.2f%nDivida: %.2f%nStatus: %s%n",
                 codigoReserva, nomePassageiro, origem, destino, valorTarifa, dividaExistente, statusReserva
         );
