@@ -2,12 +2,13 @@ package abstraction.SistemaContaBancaria.modelo;
 
 public class ContaBancaria {
     private final String numeroConta;
-    private String titular;
+    private final String titular;
     private float saldo;
 
     public ContaBancaria(String titular, String numeroConta) {
         if (titular == null || titular.isEmpty()) {
             System.out.printf("%nTitular nao pode ser vazio!%n");
+            this.titular = "";
         } else {
             this.titular = titular;
         }
