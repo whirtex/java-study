@@ -4,7 +4,7 @@ import abstraction.SistemaVagaEstacionamento.modelo.Vaga;
 
 public class Main {
     public static void main(String[] args) {
-        Vaga vaga = new Vaga("A12", "CARRO", 5.00f);
+        Vaga vaga = new Vaga("A67", "CARRO", 5.00f);
         System.out.println(vaga);
 
         vaga.ocuparVaga("CARRO");
